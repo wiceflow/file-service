@@ -1,0 +1,41 @@
+server:
+  port:  10205
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /file-service/api/v1
+
+spring:
+  jmx:
+    enabled: false
+  datasource:
+    druid:
+
+      #        url: jdbc:mysql://192.168.40.113:3306/ptom?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      #        username: bus
+      #        password: bus123
+      url: jdbc:mysql://192.168.40.246:3306/ptom?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;serverTimezone=CTT
+      username: root
+      password: Ab0123456@
+
+      driver-class-name: com.mysql.jdbc.Driver
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      db-type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis-plus:
+  type-aliases-package: cn.sibat.bus.ptom.objects.entity
+  type-aliases-super-type: java.lang.Object
+  check-config-location: false
+  mapper-locations: /mapper/*Mapper.xml
+  configuration:
+    #配置返回数据库(column下划线命名&&返回java实体是驼峰命名)，自动匹配无需as（没开启这个，SQL需要写as： select user_id as userId）
+    map-underscore-to-camel-case: true
+
+
+
+
+
+
+
