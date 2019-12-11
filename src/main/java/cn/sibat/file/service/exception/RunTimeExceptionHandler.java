@@ -1,4 +1,4 @@
-package cn.sibat.file.service.controller.exception;
+package cn.sibat.file.service.exception;
 
 
 import cn.sibat.file.service.util.AjaxResult;

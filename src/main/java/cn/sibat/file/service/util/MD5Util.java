@@ -1,6 +1,6 @@
 package cn.sibat.file.service.util;
 
-import cn.sibat.file.service.controller.exception.RRException;
+import cn.sibat.file.service.exception.RRException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

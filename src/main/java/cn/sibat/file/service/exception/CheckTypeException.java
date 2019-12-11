@@ -1,29 +1,31 @@
-package cn.sibat.file.service.controller.exception;
+package cn.sibat.file.service.exception;
 
 /**
  * 自定义异常
+ *
  * @author BF
  */
-public class RRException extends RuntimeException {
+public class CheckTypeException extends RuntimeException {
     private String msg;
     private int code = 500;
-    public RRException(String msg) {
+
+    public CheckTypeException(String msg) {
         super(msg);
         this.msg = msg;
     }
 
-    public RRException(String msg, Throwable e) {
+    public CheckTypeException(String msg, Throwable e) {
         super(msg, e);
         this.msg = msg + " ->  " + e.getMessage();
     }
 
-    public RRException(String msg, int code) {
+    public CheckTypeException(String msg, int code) {
         super(msg);
         this.msg = msg;
         this.code = code;
     }
 
-    public RRException(String msg, int code, Throwable e) {
+    public CheckTypeException(String msg, int code, Throwable e) {
         super(msg, e);
         this.msg = msg;
         this.code = code;

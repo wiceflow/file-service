@@ -27,13 +27,11 @@ public class Constants {
      */
     public final static Integer IMAGE_TYPE_INTEGER = 0;
     public final static String IMAGE_TYPE_STRING = "image";
-//    public final static String IMAGE_PATH = "/data/file-service/images/";
 
     /**
      * 是否为文件上传
      */
     public final static Integer FILE_TYPE_INTEGER = 1;
-//    public final static String FILE_PATH = "/data/file-service/file";
 
     /**
      * 是否为文档上传
@@ -42,7 +40,6 @@ public class Constants {
      */
     public final static Integer TEXT_TYPE_INTEGER = 2;
     public final static String TEXT_TYPE_STRING = "text";
-//    public final static String TEXT_PATH = "/data/file-service/text/";
 
     /**
      * 是否为视屏上传
@@ -51,7 +48,6 @@ public class Constants {
      */
     public final static Integer VIDEO_TYPE_INTEGER = 3;
     public final static String VIDEO_TYPE_STRING = "video";
-//    public final static String VIDEO_PATH = "/data/file-service/video/";
 
     /**
      * 文件后缀前面的点

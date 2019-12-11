@@ -1,7 +1,7 @@
 package cn.sibat.file.service.util;
 
-import cn.sibat.file.service.controller.exception.CheckTypeException;
-import cn.sibat.file.service.controller.exception.RRException;
+import cn.sibat.file.service.exception.CheckTypeException;
+import cn.sibat.file.service.exception.RRException;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.activation.MimetypesFileTypeMap;
